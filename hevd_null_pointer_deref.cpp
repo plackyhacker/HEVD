@@ -2,6 +2,8 @@
 #include <windows.h>
 #include <psapi.h>
 
+// tested on Win7 64bit SP1
+
 // QWORD is nicer!
 typedef uint64_t QWORD;
 
