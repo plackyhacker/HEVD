@@ -7,3 +7,5 @@
 - [Stack-based Buffer Overflow - Windows 10 64bit 1607](https://github.com/plackyhacker/HEVD/blob/main/hevd_stack_overflow.cpp)
  
 - [Type Confusion - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_type_confusion.cpp)
+
+- [Arbitrary Write - Windows 7 64bit SP1)(https://github.com/plackyhacker/HEVD/blob/main/hevd_arbitrary_write.cpp)
