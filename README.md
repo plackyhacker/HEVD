@@ -8,4 +8,4 @@
  
 - [Type Confusion - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_type_confusion.cpp)
 
-- [Arbitrary Write - Windows 7 64bit SP1)(https://github.com/plackyhacker/HEVD/blob/main/hevd_arbitrary_write.cpp)
+- [Arbitrary Write - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_arbitrary_write.cpp)
