@@ -92,7 +92,7 @@ int main() {
         printf("[+] Hopefully the magic has happened...\n");
         printf("[+] Spawning new process..\n\n");
 
-        // span a new command prompt
+        // spawn a new command prompt
         system("cmd.exe");
 
         // close the driver handle
