@@ -10,9 +10,17 @@ My attempts at kernel exploitation on the purposely vulnerable driver, HEVD.
 
 A double fetch bug occurs when a kernel or privileged code fetches the same memory value twice, allowing attackers to exploit race conditions and manipulate data between the two reads. 
 
-[Double Fetch Windows 2022 10.0.20348 N/A Build 20348](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/double-fetch/double_fetch.cpp)
+[Double Fetch - Windows 2022 10.0.20348 N/A Build 20348](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/double-fetch/double_fetch.cpp)
 
 [Shellcode](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/double-fetch/double_fetch_shellcode.asm)
+
+## Type Confusion
+
+Type confusion refers to a vulnerability where a program assumes a specific data type for an object, but due to a flaw, the object's type is manipulated or misinterpreted. This can lead to unpredictable behavior, allowing attackers to manipulate memory and potentially execute arbitrary code.
+
+[Type Confusion - Windows 2022 10.0.20348 N/A Build 20348](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/type-confusion/type_confusion.cpp)
+
+[Type Confusion - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_type_confusion.cpp)
 
 # Windows 10
 
@@ -29,12 +37,6 @@ A stack-based buffer overflow occurs when a program writes more data into a buff
 Null pointer dereference occurs when a program attempts to access or manipulate memory through a null pointer, leading to unexpected behavior or crashes. This is a fairly easy exploit but is not available on newer versions of Windows.
 
 [Null Pointer Dereference - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_null_pointer_deref.cpp)
-
-## Type Confusion
-
-Type confusion refers to a vulnerability where a program assumes a specific data type for an object, but due to a flaw, the object's type is manipulated or misinterpreted. This can lead to unpredictable behavior, allowing attackers to manipulate memory and potentially execute arbitrary code.
-
-[Type Confusion - Windows 7 64bit SP1](https://github.com/plackyhacker/HEVD/blob/main/hevd_type_confusion.cpp)
 
 ## Arbitrary Write
 
