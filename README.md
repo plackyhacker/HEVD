@@ -6,6 +6,14 @@ My attempts at kernel exploitation on the purposely vulnerable driver, HEVD.
 
 # Windows 2022
 
+## Use after Free
+
+A Use-After-Free (UaF) bug in the Windows kernel occurs when a driver accesses memory after it has been freed, leading to arbitrary code execution. Attackers exploit UaF by reclaiming the freed memory with controlled data, manipulating kernel execution.
+
+[Use after Free - Windows 2022 10.0.20348 N/A Build 20348](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/uaf/use_after_free.cpp)
+
+[Shellcode](https://github.com/plackyhacker/HEVD/blob/main/windows-2022/uaf/uaf.asm)
+
 ## Double Fetch
 
 A double fetch bug occurs when a kernel or privileged code fetches the same memory value twice, allowing attackers to exploit race conditions and manipulate data between the two reads. 
